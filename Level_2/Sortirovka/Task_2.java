@@ -21,21 +21,23 @@ public class Task_2 {
         int m = 0;
         int n = 0;
         int[] general = new int[one.length + two.length];
-        for (int i = 0; i < general.length; i++) {
-            for (int j = m; j < one.length; j++) {
-                for (int k = n; k < two.length; k++) {
-                    if (one[j] <= two[k]){
-                        general[i] = one[j];
-                        m++;
-                        break;
-                    } else {
-                        general[i] = two[k];
-                        n++;
-                        break;
-                    }
-                }
-            }
+        for (int i = 0; i < one.length; i++) {
+            general[i] = one[i];
         }
+         for (int i = 0; i < general.length; i++) {
+             for (int j = 0; j < two.length; j++) {
+                if (two[i] <= general[i]){
+                    for (int k = general.length; k >= n; k--) {
+                    }
+                    general[i] = two[j];
+                    n++;
+                } else {
+                   general[i] = two[j];
+                   n++;
+                }
+                
+             }
+         }
         for (int i = 0; i < general.length; i++) {
             System.out.print(general[i]+ " : ");
         }
