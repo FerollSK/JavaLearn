@@ -2,8 +2,8 @@ package Level_2.Sortirovka;
 
 public class Task_2 {
     public static void main(String[] args) {
-        int[] one = new int[3];
-        int[] two = new int[7];
+        int[] one = new int[9];
+        int[] two = new int[8];
         for (int i = 1; i < one.length + 1; i++) {
             one[i - 1] = (int)(i * 2.5);
         }
