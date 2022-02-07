@@ -18,28 +18,27 @@ public class Task_2 {
             System.out.print(two[i] + " : ");
         }
         System.out.println();
-        int m = 0;
-        int n = 0;
+
         int[] general = new int[one.length + two.length];
+
         for (int i = 0; i < one.length; i++) {
             general[i] = one[i];
         }
-         for (int i = 0; i < general.length; i++) {
-             for (int j = 0; j < two.length; j++) {
-                if (two[i] <= general[i]){
-                    for (int k = general.length; k >= n; k--) {
-                    }
-                    general[i] = two[j];
-                    n++;
-                } else {
-                   general[i] = two[j];
-                   n++;
-                }
-                
+         for (int i = two.length; i < general.length; i++) {
+                    general[i] = two[i-two.length];                
              }
-         }
+
+        for (int i = general.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if( general[j] > general[j+1] ){
+                    int tmp = general[j];
+                    general[j] = general[j+1];
+                    general[j+1] = tmp;
+                }
+            }
+        }
         for (int i = 0; i < general.length; i++) {
-            System.out.print(general[i]+ " : ");
+            System.out.print(general[i] + " : ");
         }
     }
 }
