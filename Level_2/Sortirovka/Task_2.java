@@ -2,7 +2,7 @@ package Level_2.Sortirovka;
 
 public class Task_2 {
     public static void main(String[] args) {
-        int[] one = new int[7];
+        int[] one = new int[3];
         int[] two = new int[7];
         for (int i = 1; i < one.length + 1; i++) {
             one[i - 1] = (int)(i * 2.5);
@@ -24,8 +24,8 @@ public class Task_2 {
         for (int i = 0; i < one.length; i++) {
             general[i] = one[i];
         }
-         for (int i = two.length; i < general.length; i++) {
-                    general[i] = two[i-two.length];                
+         for (int i = one.length; i < general.length; i++) {
+                    general[i] = two[i - one.length];                
              }
 
         for (int i = general.length - 1; i > 0; i--) {
