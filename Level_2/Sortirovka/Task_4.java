@@ -3,7 +3,7 @@ package Level_2.Sortirovka;
 import java.util.Arrays;
 
 public class Task_4 {
-    public static void main(String[] args){
+    public static void main (String[] args){
     int[] massive = {1, 3, 4, 7, 9, 11, 14, 17};  
     boolean isSorted = false;
     int n;
