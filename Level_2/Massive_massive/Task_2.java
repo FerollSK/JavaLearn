@@ -1,6 +1,5 @@
 package Level_2.Massive_massive;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Task_2 {
@@ -31,5 +30,6 @@ public class Task_2 {
         for (int i = matrix.length - 1; i >= 0; i--){
             System.out.print(matrix[i][matrix.length - i - 1] + " : ");
         }
+        scanner.close();
     }
 }
