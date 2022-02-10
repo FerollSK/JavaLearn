@@ -13,8 +13,8 @@ public class Task_2 {
 
         int gcd = matrix[0];
 
-        for (int i=1 ; i<matrix.length; i++){
-            gcd = getGcd(gcd,matrix[i]);
+        for (int i = 1; i < matrix.length; i++) {
+            gcd = getGcd(gcd, matrix[i]);
         }
         System.out.println(gcd);
     }

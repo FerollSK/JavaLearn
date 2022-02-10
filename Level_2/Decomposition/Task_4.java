@@ -22,7 +22,7 @@ public class Task_4 {
     }
 
     private static double distance(Сoordinates a, Сoordinates b) {
-        double dist = Math.sqrt((a.x - b.x)*(a.x - b.x) + (a.y - b.y)*(a.y - b.y));
+        double dist = Math.sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
         return dist;
     }
 }
