@@ -4,7 +4,7 @@ public class Task_2 {
     public static void main(String[] args) {
 
         int a = RandomNumber.number();
-        int[] matrix = RandomMatrix.randoMatrix(a);
+        int[] matrix = RandomMassive.randoMassive(a);
 
         for (int i = 0; i < matrix.length; i++) {
             System.out.print(matrix[i] + " : ");
