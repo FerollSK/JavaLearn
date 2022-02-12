@@ -8,12 +8,12 @@ public class Task_10 {
         System.out.println(Arrays.toString(massive(numb)));
     }
 
-    private static int[] massive(int number){
+    private static int[] massive(int number) {
         int n = number(number);
         int[] massive = new int[n];
         for (int i = 0; i < massive.length; i++) {
-            massive[massive.length - i -1] = number % 10;
-            number /= 10; 
+            massive[massive.length - i - 1] = number % 10;
+            number /= 10;
         }
         return massive;
     }

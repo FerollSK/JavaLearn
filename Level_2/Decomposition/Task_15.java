@@ -1,13 +1,12 @@
 package Level_2.Decomposition;
 
-import java.util.Arrays;
-
 public class Task_15 {
     public static void main(String[] args) {
-        int n = 8273;
+        int n = 82723;
         allNumbers(n);
     }
 
+    // вывод на экран
     private static void allNumbers(int n) {
         int a = number(n) - 1;
         int b = (int) Math.pow(10, a);
@@ -25,15 +24,15 @@ public class Task_15 {
         int count = 0;
         int[] massive = new int[n];
         for (int i = massive.length - 1; i >= 0; i--) {
-            massive[i] = a % 10; 
+            massive[i] = a % 10;
             a /= 10;
         }
         for (int i = 0; i < massive.length - 1; i++) {
-            if (massive[i + 1] == massive[i] + 1){
-                count ++;
+            if (massive[i + 1] == massive[i] + 1) {
+                count++;
             }
         }
-        if (count == n - 1){
+        if (count == n - 1) {
             return true;
         } else {
             return false;
