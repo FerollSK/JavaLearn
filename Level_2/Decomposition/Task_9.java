@@ -1,7 +1,5 @@
 package Level_2.Decomposition;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class Task_9 {
     public static void main(String[] args) {
         int x = 5;

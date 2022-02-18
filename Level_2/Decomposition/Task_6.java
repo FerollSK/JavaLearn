@@ -1,7 +1,5 @@
 package Level_2.Decomposition;
 
-import javax.swing.event.SwingPropertyChangeSupport;
-
 public class Task_6 {
     public static void main(String[] args){
         int[] massive = {5, 3, 9};
