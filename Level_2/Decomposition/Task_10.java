@@ -1,15 +1,22 @@
 package Level_2.Decomposition;
 
-import javax.print.attribute.SupportedValuesAttribute;
+import java.util.Arrays;
+
 
 public class Task_10 {
     public static void main(String[] args) {
-        System.out.println(number(9547));
+        int a = 23418;
+        System.out.println(Arrays.toString(massive(a)));
     }
 
     private static int[] massive(int a) {
         int x = number(a);
-        int[]
+        int[] mas = new int[x];
+        for (int i = x -1; i >= 0; i--) {
+            mas[i] = a % 10;
+            a /= 10;
+        }
+        return mas;
     }
 
     private static int number(int n){
