@@ -1,10 +1,11 @@
 package Level_2.Decomposition;
 
+
 public class Task_5 {
     public static void main(String[] args){
         int[] massive = RandomMassive.randoMassive(6);
 
-        sort(massive);
+        clesort(massive);
         int preMax = massive[1];
         for (int i = 0; i < massive.length; i++) {
             System.out.print(massive[i] + " : ");
@@ -14,7 +15,7 @@ public class Task_5 {
 
     }
 
-    private static int[] sort(int[] massive){
+    private static int[] clesort(int[] massive){
         boolean isSorted = false;
         int n;
         while (!isSorted){

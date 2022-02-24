@@ -1,4 +1,4 @@
-package Level_3;
+package Level_3.SubLevel1;
 
 /*
 //В строке найти количество цифр

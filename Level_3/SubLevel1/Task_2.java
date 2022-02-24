@@ -1,4 +1,4 @@
-package Level_3;
+package Level_3.SubLevel1;
 
 /*
 //Замените в строке все вхождения 'word' на 'letter'
